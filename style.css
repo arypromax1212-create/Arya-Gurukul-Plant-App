@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #eef7f1;
+}
+
+header {
+  background: linear-gradient(135deg, #1b5e20, #4caf50);
+  color: white;
+  text-align: center;
+  padding: 25px 10px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+header h2 {
+  margin: 5px 0;
+  letter-spacing: 2px;
+}
+
+#search {
+  width: 92%;
+  margin: 20px auto;
+  display: block;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #bbb;
+}
+
+#plantContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #1b5e20;
+}
+
+.card p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+button {
+  background: #2e7d32;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #1b5e20;
+}
+
+footer {
+  text-align: center;
+  background: #c8e6c9;
+  padding: 15px;
+  font-weight: bold;
+}
+.plant-title {
+  cursor: pointer;
+  color: #1b5e20;
+}
+
+.details {
+  display: none;
+  margin-top: 10px;
+}
+
+.card.active .details {
+  display: block;
+}
